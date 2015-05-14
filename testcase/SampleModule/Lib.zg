@@ -1,0 +1,33 @@
+
+import SampleModule.Spider
+
+#Lib_version = 1.0
+
+...冒泡排序
+function sort(arr):
+
+	cnt = 0
+
+	loop cnt < arr.len:
+		
+		index = 0
+		
+		loop index < arr.len - cnt - 1 :
+			
+			if arr[index] > arr[index+1]:
+				
+				temp = arr[index+1]
+				
+				arr[index+1] = arr[index]
+				
+				arr[index] = temp
+			;
+			
+			index++
+		;
+	
+		cnt++
+	;
+	
+	return arr
+;

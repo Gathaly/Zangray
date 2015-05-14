@@ -1,0 +1,16 @@
+import SampleModule.Lib
+
+...定义动态数组
+arr = [10,2013,4,5,1,8,9,10]
+arr.add(29)
+arr.add(23)
+arr.add(22)
+arr.remove(1)
+
+...调用冒泡排序
+sort(arr)
+
+...输出
+traceln('The Import Libary version is:' + Lib_version)
+
+traceln(arr)

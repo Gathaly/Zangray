@@ -1,0 +1,65 @@
+
+function ConditionTest(a):
+
+	if a == 1 :
+	
+		traceln('a is 1')
+		
+	;else a > 9:
+	
+		traceln('it is ' + a)
+	
+	;else:
+	
+		traceln('a is not 1')
+	;
+	
+	if a == 2 :
+	
+		traceln('again, a bigger than 5')
+	;
+	
+	if a > 5 :
+	
+		traceln('again, a bigger than 5')
+	;else:
+	
+		traceln('o oh!')
+	;
+;
+
+
+function Compound(c,d):
+
+	loop c != d :
+	
+		c++
+		
+		traceln(c)
+	;
+	
+	traceln(c+d)
+	
+	traceln(' ')
+;
+
+function Echo(y):
+
+	if y == 10:
+		
+		traceln('y is 10')
+		
+		traceln(' ')
+		
+		return y
+	;
+
+	y++
+	
+	Echo(y)
+;
+
+
+Compound(Echo(0), 20)
+
+ConditionTest(2)

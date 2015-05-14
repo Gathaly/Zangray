@@ -1,0 +1,49 @@
+
+function test(a,b,c,d,e):
+
+	...无抛错
+	...return a > c && testzg
+
+	...无抛错
+	...return a > c || a == b || d || abc
+	
+	...注意负号
+	...return a == c || a * (- (a + b - c)) > 1 && (a + b - c) * (a + b - c) < 3
+		
+	...C -> (R、L、R、L) -> C -> R
+	...return c - 1 + a * ( 1 - b ) * ( 2 - b + a ) - ( a + b + c ) + a * b * 10 > 1 || a + b <= 99 && a - ( a + a * a) > c * c
+	
+	...C -> R -> C -> L -> R
+	...return (a + b - c) * c - (a + b ) * b < c * a - (a + b) && a + b - c *(a+b) < c - a
+	
+	...C -> (R、L、R、L、R)
+	...return (a + b + c) + (c - b) * 1 > 1 * a  && 2 * b < 3 * c && a < c
+	
+	...(L C) -> (C R C)
+	...return a + b - c > 0 && a - (b * c) * a > b - c * 10 - ( a + b)
+	
+	...(C L R C) -> (C L R C)
+	...return b > a && 0 < c - a + b + 1 * (b - c) * 2 + a * b * c * 2 && a - c < b + a - (b - a)
+	
+	...return b > a && 0 < c - a + b + 1 * (b - c) * 2 + a * b * c * 2 && a - c < b + a - (b - a) && ( a < c && ( b < (a + b) - c || d ))
+	
+	....traceln(0 < c - a + b + 1 * (b - c) * 2 + a * b * c * 2)
+	
+	...traceln((a - c) + 1 < b + a - (b - a))
+	
+	...traceln(0 < c - a + b + 1 * (b - c) * 2 + a * b * c * 2 && (a - c) + 1 < b + a - (b - a))
+	
+	...(L) -> (C R L C R C)
+	...return b > a && (0 < c - a + b + 1 * (b - c) * 2 + a * b * c * 2 && (a - c) * 2 + (3 * 4) < b + a - (b - a) + 5)
+	
+	...return (a+b-c) - c < 0
+	
+	return  b < (a + b) - c || !e 
+;
+
+
+#a = 2
+
+#d = test(a, a+1, 4, true, false)
+
+trace(d)

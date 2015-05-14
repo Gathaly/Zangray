@@ -1,0 +1,15 @@
+
+
+traceln(message + ' ' + version)
+
+traceln(valueObject.getStrParameter())
+
+traceln(valueObject.getIntParameter())
+
+traceln(valueObject.getDoubleParameter())
+
+traceln(valueObject.isBoolParameter())
+
+obj = valueObject.getObjParameter()
+
+traceln(obj.getStrParameter())

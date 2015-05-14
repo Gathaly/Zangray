@@ -1,0 +1,30 @@
+
+function test(a,b,c):
+
+	...c =  -c * c + b - a + c + c * c / c - a + a
+	
+	...c = -a + b - c * c + a - b
+		
+	...c = a + b - (c * a - a + b - 2) - 1 + a * (2 * b)
+	
+	...c = (1+2)*4+(a-b)-(b-c)*(b+c)+(a*b)/c*(a-b)
+	
+	...c = c * a - (a + b - 2) * (-3 / b - 5 + a * c)
+	
+	c = -(a+b) * (a + b) - c * (a-b-c+((a+b) * (a + b) - c *5)) + c * (a-b-c+((a+b) * (a + b) - c *5) + 1 - 2 * a)
+	
+	...c = -a + b - c + c * a - b
+	
+	...c = true && !(a + b - c > 1)
+	
+	...return b > a && (0 < c - a + b + 1 * (b - c) * 2 + a * b * c * 2 && (a - c) * 2 + (3 * 4) < b + a - (b - a) + 5)
+	
+	return c
+;
+
+
+#a = 2
+
+#d = test(a,a+1,4)
+
+trace(d)

@@ -1,0 +1,10 @@
+...这是注释
+function helloword(name):
+...这是注释
+	#str = 'hello!' + name
+...这是注释
+	traceln(str)...这是注释
+	
+;...这是注释
+
+helloword('world')
